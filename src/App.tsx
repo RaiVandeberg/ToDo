@@ -13,6 +13,7 @@ import InputText from "./components/input-text";
 import InputCheckbox from "./components/input-checkbox";
 import Card from "./components/card";
 import Container from "./components/container";
+import Skeleton from "./components/skeleton";
 
 
 export default function App() {
@@ -29,7 +30,8 @@ export default function App() {
           <Icon svg={Spinner} animate />
           <Icon svg={X} className="fill-red-base" />
         </div>
-        <div>
+        <div className="flex gap-1">
+          <Badge loading>5</Badge>
           <Badge variant="primary" size="sm">Primary</Badge>
           <Badge variant="secondary" size="sm">Secondary</Badge>
         </div>
@@ -45,6 +47,7 @@ export default function App() {
         <InputText />
         <InputCheckbox />
         <Card size="md">Oiiii</Card>
+        <Skeleton className="w-20 h-5" />
       </div>
     </Container>
   )
