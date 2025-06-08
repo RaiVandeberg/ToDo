@@ -35,13 +35,13 @@ export default function PageComponents() {
                     <Badge variant="secondary" size="sm">Secondary</Badge>
                 </div>
                 <div>
-                    <Button className="mt-2" icon={Plus}>
+                    <Button className="mt-2" icon={Plus} handling>
                         Primary
                     </Button>
 
                     <ButtonIcon icon={TrashIcon} />
                     <ButtonIcon icon={TrashIcon} variant="secondary" />
-                    <ButtonIcon icon={TrashIcon} variant="tertiary" />
+                    <ButtonIcon icon={TrashIcon} handling variant="tertiary" />
                 </div>
                 <InputText />
                 <InputCheckbox />
