@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route element={<LayoutMain />}>
           <Route element={<PageHome />} index />
-          <Route path="/componentes" element={<PageComponents />} />
+
         </Route>
       </Routes>
 
